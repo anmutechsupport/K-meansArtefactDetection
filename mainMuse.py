@@ -80,35 +80,35 @@ if __name__ == "__main__":
                 powers = powers[:, 3:5]
 
                 # print(powers)
-                kmeans = KVerticalMikky()
+                kmeans = Kmeans2D()
                 label = kmeans.predict(powers)
 
                 """ 3.3 COMPUTE NEUROFEEDBACK METRICS """
                 print(label)
 
-                # if  label == 0:
-                #     print("""
+                if  label == 0:
+                    print("""
 
-                #     right
+                    right
 
-                #     """)
-                #     pyautogui.press('right')
+                    """)
+                    pyautogui.press('right')
 
-                # elif label == 1:
-                #     print("""
+                elif label == 1:
+                    print("""
 
-                #     left
+                    left
 
-                #     """)
-                #     pyautogui.press('left')
+                    """)
+                    pyautogui.press('left')
 
-                # elif label == 2:
-                #     print("""
+                elif label == 2:
+                    print("""
 
-                #     up
+                    up
 
-                #     """)
-                #     pyautogui.press('up')
+                    """)
+                    pyautogui.press('up')
 
 
     except KeyboardInterrupt:
